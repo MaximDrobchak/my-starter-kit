@@ -1,11 +1,11 @@
-const md5File = require('md5-file');
-const path = require('path');
+const md5File = require("md5-file");
+const path = require("path");
 
-const ignoreStyles = require('ignore-styles');
+const ignoreStyles = require("ignore-styles");
 const register = ignoreStyles.default;
 
 // When running on the server,  to load via their hashed version in the build folder
-const extensions = ['.gif', '.jpeg', '.jpg', '.png', '.svg'];
+const extensions = [".gif", ".jpeg", ".jpg", ".png", ".svg"];
 
 // Override the default style ignorer, also modifying all image requests
 register(ignoreStyles.DEFAULT_EXTENSIONS, (mod, filename) => {
@@ -23,15 +23,15 @@ register(ignoreStyles.DEFAULT_EXTENSIONS, (mod, filename) => {
 
 // The first two allow us to use import rather than require, the third is for code splitting
 // Polyfill includes a custom regenerator runtime and core-js
-require('@babel/polyfill');
-require('@babel/register')({
+require("@babel/polyfill");
+require("@babel/register")({
   ignore: [/\/(build|node_modules)\//],
-  presets: ['@babel/preset-env', '@babel/preset-react'],
+  presets: ["@babel/preset-env", "@babel/preset-react"],
   plugins: [
-    '@babel/plugin-syntax-dynamic-import',
-    'dynamic-import-node',
-    'react-loadable/babel',
-  ],
+    "@babel/plugin-syntax-dynamic-import",
+    "dynamic-import-node",
+    "react-loadable/babel"
+  ]
 });
 
-require('./server');
+require("./server");

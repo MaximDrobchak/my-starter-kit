@@ -4,7 +4,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 1em Roboto, sans-serif;
+  font-family: sans-serif;
   width: 100%;
 }
 
@@ -21,4 +21,3 @@ body {
   margin: auto;
   padding: auto;
 }
-

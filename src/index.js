@@ -1,14 +1,14 @@
-import React from 'react';
-import { render, hydrate } from 'react-dom';
-import { Provider } from 'react-redux';
-import Loadable from 'react-loadable';
-import { Frontload } from 'react-frontload';
-import { ConnectedRouter } from 'connected-react-router';
-import createStore from './store';
+import React from "react";
+import { render, hydrate } from "react-dom";
+import { Provider } from "react-redux";
+import Loadable from "react-loadable";
+import { Frontload } from "react-frontload";
+import { ConnectedRouter } from "connected-react-router";
+import createStore from "./store";
 
-import App from './routes';
+import App from "./routes";
 
-import './index.css';
+import "./index.css";
 
 // Create a store and get back itself and its history object
 
@@ -24,7 +24,7 @@ const Application = (
   </Provider>
 );
 
-const root = document.querySelector('#root');
+const root = document.querySelector("#root");
 
 if (root.hasChildNodes() === true) {
   // If it's an SSR, we use hydrate to get fast page loads by just

@@ -1,0 +1,48 @@
+.text-links {
+  text-decoration: none;
+  font-family: Lato;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.38;
+  color: #ffffff;
+}
+
+.text-links:hover {
+  font-size: 1.1em;
+  font-weight: 900;
+}
+#Menu {
+  background: url("./img/background-header.png") no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+
+.main-text {
+  position: relative;
+  width: 293px;
+  height: 42px;
+  font-family: Roboto;
+  font-size: 35px;
+  line-height: 1.2;
+  color: #189af1;
+  margin-left: 40.3%;
+  top: 232px;
+}
+.main-text > span {
+  margin-bottom: 34px;
+}
+.main-text :nth-child(3) {
+  width: 523px;
+  height: 85px;
+  text-shadow: 0 8px 12px rgba(0, 0, 0, 0.16);
+  font-family: Roboto;
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 1.21;
+  letter-spacing: 3.5px;
+  color: #ffffff;
+}
+.main-text :nth-child(7) {
+  position: relative;
+  top: 70px;
+}

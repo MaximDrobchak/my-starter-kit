@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import Typed from 'typed.js';
+import React, { Component } from "react";
+import Typed from "typed.js";
 
-import './styles.css';
+import "./styles.css";
 
 class TypedReactDemo extends Component {
   componentDidMount() {
@@ -10,7 +10,7 @@ class TypedReactDemo extends Component {
     const options = {
       strings: strings,
       typeSpeed: 50,
-      backSpeed: 50,
+      backSpeed: 50
     };
     // this.el refers to the <span> in the render() method
     this.typed = new Typed(this.el, options);
@@ -24,10 +24,10 @@ class TypedReactDemo extends Component {
 
   render() {
     return (
-      <div className='wrap'>
-        <div className='type-wrap'>
+      <div className="wrap">
+        <div className="type-wrap">
           <span
-            style={{ whiteSpace: 'pre' }}
+            style={{ whiteSpace: "pre" }}
             ref={el => {
               this.el = el;
             }}
@@ -107,7 +107,7 @@ const About = () => (
 						</button>
 					</div>
 				);
-			}`,
+			}`
     ]}
   />
 );

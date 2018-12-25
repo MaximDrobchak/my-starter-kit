@@ -1,46 +1,79 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { agileNixIcon, social } from './img';
+import React from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
+import { agileNixIcon, social } from "./img";
 
-import { Navigation, AgileNixLinkImage, BackgroundMenu } from './style.js';
+import { ConteinerPage } from "../../";
+import Splinters from "./Splinters";
+import Button from "../../../components/Button";
+import "./style.css";
 
-import MainText from './MainText';
-import Splinters from './Splinters';
-import Typed from './Typed';
 // from dev schema grid
-import { DevGrid, PageContainer, MenuLink } from '../../';
+// import { DevGrid } from '../../';
+// testing typed.js,
+import Typed from "./Typed";
+
+const Navigation = styled.div`
+  width: 100%;
+  display: flex;
+  z-index: 100;
+  position: absolute;
+  justify-content: flex-start;
+  padding-top: 18px;
+`;
 
 const links = [
-  { linkID: 0, title: 'About Us', path: '#about' },
-  { linkID: 4, title: 'Services', path: '#services' },
-  { linkID: 5, title: 'Technologies', path: '#technologies' },
-  { linkID: 3, title: 'Portfolio', path: '#portfolio' },
-  { linkID: 2, title: 'Hiring', path: '#hiring' },
-  { linkID: 1, title: 'Contact', path: '#contact' },
+  { linkID: 0, title: "About Us", path: "#about" },
+  { linkID: 4, title: "Services", path: "#services" },
+  { linkID: 5, title: "Technologies", path: "#technologies" },
+  { linkID: 3, title: "Portfolio", path: "#portfolio" },
+  { linkID: 2, title: "Hiring", path: "#hiring" },
+  { linkID: 1, title: "Contact", path: "#contact" }
 ];
+
+const MenuLink = ({ path, title }) => (
+  <a className="text-links" href={path} style={{ marginRight: 15 }}>
+    {title}
+  </a>
+);
 
 const NavBar = () => (
   <Navigation>
-    <Link to='/'>
-      <AgileNixLinkImage src={agileNixIcon} alt='AgileNix' />
-    </Link>
     <div>
+      <Link to="/">
+        <img style={{ height: 25 }} src={agileNixIcon} alt="AgileNix" />
+      </Link>
+    </div>
+    <div style={{ marginLeft: "8.7%" }}>
       {links.map(link => (
         <MenuLink key={link.linkID} {...link} />
       ))}
-      <img src={social} alt='' />
+      <img style={{ height: 14 }} src={social} alt="" />
     </div>
   </Navigation>
 );
 
-export default () => (
-  <BackgroundMenu>
-    <PageContainer id='Menu'>
-      {/* <DevGrid /> */}
-      <Typed />
-      <NavBar />
-      <MainText />
-      <Splinters />
-    </PageContainer>
-  </BackgroundMenu>
+const Text = () => (
+  <div className="main-text">
+    <span>Mobile application</span>
+    <br />
+    <span>DEVELOPMENT</span>
+    <br />
+    <span>Full-cycle website</span>
+    <br />
+    <Button text="Learn more now" />
+  </div>
 );
+
+const Menu = () => (
+  <ConteinerPage id="Menu">
+    {/* <DevGrid /> */}
+    <Typed />
+
+    <NavBar />
+    <Text />
+    <Splinters />
+  </ConteinerPage>
+);
+
+export default Menu;
