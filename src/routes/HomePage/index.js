@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router";
 import Helmet from "react-helmet";
-import logo from "../../assets/Logo/Agilenix_A_darkblue-blue.svg";
+import logo from "../../assets/Logo/Rectangle 1.svg";
 
 const SITE_URL =
   process.env.NODE_ENV === "development"
     ? "http://localhost:3000"
-    : "https://agilenix.com/";
+    : "http://localhost:3000";
 
 const defaultTitle = "AgileNix";
 const defaultDescription = "AgileNix Landing.";

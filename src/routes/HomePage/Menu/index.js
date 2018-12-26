@@ -3,15 +3,13 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { agileNixIcon, social } from "./img";
 
-import { ConteinerPage } from "../../";
+import { ContainerPage, Button } from "../../";
 import Splinters from "./Splinters";
-import Button from "../../../components/Button";
+
 import "./style.css";
 
 // from dev schema grid
 // import { DevGrid } from '../../';
-// testing typed.js,
-import Typed from "./Typed";
 
 const Navigation = styled.div`
   width: 100%;
@@ -66,14 +64,13 @@ const Text = () => (
 );
 
 const Menu = () => (
-  <ConteinerPage id="Menu">
+  <ContainerPage id="Menu">
     {/* <DevGrid /> */}
-    <Typed />
 
     <NavBar />
     <Text />
     <Splinters />
-  </ConteinerPage>
+  </ContainerPage>
 );
 
 export default Menu;

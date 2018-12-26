@@ -11,6 +11,7 @@
     "babel-plugin-dynamic-import-node": "^2.1.0",
     "connected-react-router": "^4.5.0",
     "cookie-parser": "^1.4.3",
+    "cra-gen": "^1.2.5",
     "cross-env": "^5.2.0",
     "eslint-plugin-react-hooks": "^0.0.0",
     "forcedomain": "^1.0.0",
@@ -18,7 +19,6 @@
     "js-cookie": "^2.2.0",
     "md5-file": "^4.0.0",
     "morgan": "^1.9.1",
-    "node-sass": "^4.11.0",
     "prop-types": "^15.6.2",
     "query-string": "^6.2.0",
     "react": "16.7.0-alpha.2",
@@ -29,11 +29,9 @@
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
     "react-scripts": "^2.0.4",
-    "recompose": "^0.30.0",
     "redux": "^4.0.0",
     "redux-thunk": "^2.3.0",
-    "styled-components": "^4.1.2",
-    "typed.js": "^2.0.9"
+    "styled-components": "^4.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
