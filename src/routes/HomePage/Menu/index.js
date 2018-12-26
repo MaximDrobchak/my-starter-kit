@@ -1,12 +1,12 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import styled from "styled-components";
-import { agileNixIcon, social } from "./img";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+import { agileNixIcon, social } from './img';
 
-import { ContainerPage, Button } from "../../";
-import Splinters from "./Splinters";
+import { ContainerPage, Button } from '../../';
+import Splinters from './Splinters';
 
-import "./style.css";
+import './style.css';
 
 // from dev schema grid
 // import { DevGrid } from '../../';
@@ -21,12 +21,12 @@ const Navigation = styled.div`
 `;
 
 const links = [
-  { linkID: 0, title: "About Us", path: "#about" },
-  { linkID: 4, title: "Services", path: "#services" },
-  { linkID: 5, title: "Technologies", path: "#technologies" },
-  { linkID: 3, title: "Portfolio", path: "#portfolio" },
-  { linkID: 2, title: "Hiring", path: "#hiring" },
-  { linkID: 1, title: "Contact", path: "#contact" }
+  { linkID: 0, title: 'About Us', path: '#about' },
+  { linkID: 4, title: 'Services', path: '#services' },
+  { linkID: 5, title: 'Technologies', path: '#technologies' },
+  { linkID: 3, title: 'Portfolio', path: '#portfolio' },
+  { linkID: 2, title: 'Hiring', path: '#hiring' },
+  { linkID: 1, title: 'Contact', path: '#contact' },
 ];
 
 const MenuLink = ({ path, title }) => (
@@ -42,7 +42,7 @@ const NavBar = () => (
         <img style={{ height: 25 }} src={agileNixIcon} alt="AgileNix" />
       </Link>
     </div>
-    <div style={{ marginLeft: "8.7%" }}>
+    <div style={{ marginLeft: '8.7%' }}>
       {links.map(link => (
         <MenuLink key={link.linkID} {...link} />
       ))}
