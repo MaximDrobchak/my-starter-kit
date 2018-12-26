@@ -1,5 +1,5 @@
 
-ready seting from SSR from react CRA, SEO.
+This commit ready seting from SSR from react CRA, SEO.
 
 
   main seting server/** and <br/> src/index.js,src/store.js, <br/> src/routes/HomePage/index.js
