@@ -1,3 +1,18 @@
-## lv-3.
 
-Дизайны https://app.zeplin.io/project/5bfbb0f05843b43ee01a9d26
+ready seting from SSR from react CRA, SEO.
+
+
+  main seting server/** and <br/> src/index.js,src/store.js, <br/> src/routes/HomePage/index.js
+
+ package:
+  cra-gen -> <i>Generate the components CLI</i>
+      https://github.com/kkoomen/cra-gen
+
+from react-hooks: <br/>
+    "react": "16.7.0-alpha.2",
+    "react-dom": "16.7.0-alpha.2",
+
+my-setting <code>.prettierc & .eslintrc </code> from format code
+
+husky & pretty-quick <br/>
+from commit of github formater
