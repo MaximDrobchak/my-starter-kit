@@ -16,3 +16,6 @@ my-setting <code>.prettierc & .eslintrc </code> from format code
 
 husky & pretty-quick <br/>
 from commit of github formater
+
+##
+  yarn && yarn build && yarn serve
