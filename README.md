@@ -1,7 +1,7 @@
 
-## COMMITS
-  ## master  from SSR from react CRA, SEO.
-  ## full-stack    master && back-and (express, mongoDB)
+### COMMITS
+  ### master --> from SSR from react CRA, SEO.
+  ### full-stack  -->  master && back-and (express, mongoDB)
 
 ### master
   main seting server/** and <br/> src/index.js,src/store.js, <br/> src/routes/HomePage/index.js
