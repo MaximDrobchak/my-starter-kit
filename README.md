@@ -1,7 +1,9 @@
 
-This commit ready seting from SSR from react CRA, SEO.
+## COMMITS
+  ## master  from SSR from react CRA, SEO.
+  ## full-stack    master && back-and (express, mongoDB)
 
-
+### master
   main seting server/** and <br/> src/index.js,src/store.js, <br/> src/routes/HomePage/index.js
 
  package:
@@ -9,8 +11,8 @@ This commit ready seting from SSR from react CRA, SEO.
       https://github.com/kkoomen/cra-gen
 
 from react-hooks: <br/>
-    "react": "16.7.0-alpha.2",
-    "react-dom": "16.7.0-alpha.2",
+    "react": "16.7.0",
+    "react-dom": "16.7.0",
 
 my-setting <code>.prettierc & .eslintrc </code> from format code
 
